@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Tahoma;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  
+  button{
+  background-color: #eee;
+  margin: 100px auto;
+  padding: 10px 20px;
+  display: block;
+  font-size: 40px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  }
+  button:focus{
+    outline: none;
+  }
+  button span{
+    background-color:#343334 ;
+    position: absolute;
+    left: -80px;
+    top: 80px;
+    color: white;
+    min-width: 300px;
+    font-size: 25px;
+    padding: 10px 4px;
+    opacity:0;
+    transition: 0.6s;
+    
+  }
+  button span::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform:translateX(50%);
+    /* cursor: default; */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #343334 transparent;
+    /* opacity: 0; */
+  }
+  button:hover{
+    overflow: visible;
+  }
+  button:hover span{
+    opacity: 1;
+  }
+
+  
