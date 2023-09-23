@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
+    <!-- <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          padding: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+      form {
+          background-color: #eee;
+          padding: 20px;
+          border-radius: 12px;
+          display: flex;
+          gap: 20px;
+
+      }
+
+      form input:hover {
+          outline: none;
+      }
+
+      form input:first-child {
+          flex: 1;
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 8px;
+          border: none;
+      }
+
+      @media (max-width: 450px) {
+          form {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          form input:first-child {
+              width: 100%;
+          }
+
+      }
+
+      form input:last-child {
+          font-size: 18px;
+          border-radius: 8px;
+          border: none;
+          background-color: orangered;
+          color: white;
+          padding: 12px;
+          cursor: pointer;
+      }
+
+      .tasks {
+          margin-top: 20px;
+          background-color: #eee;
+          padding: 20px;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+      }
+
+      .tasks .task {
+          background-color: white;
+          position: relative;
+          padding: 15px;
+          border-radius: 8px;
+      }
+
+      .tasks .task p {
+          font-size: 18px;
+          padding-right: 55px;
+      }
+
+      .tasks .task button {
+          border: none;
+          cursor: pointer;
+          font-size: 14px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 7px;
+          background-color: orangered;
+          color: white;
+          border-radius: 8px;
+      }
+
+      .remove-all {
+          display: block;
+          margin: 20px auto;
+          width: fit-content;
+          border: none;
+          text-align: center;
+          padding: 12px 15px;
+          background-color: orangered;
+          font-size: 18px;
+          color: white;
+          border-radius: 8px;
+          cursor: pointer;
+      }
+  </style> -->
+     <style>
+      .box,.box-show{
+        background-color: #eeeeee;
+        width: 50vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .box-show{
+        margin-top: 10px;
+      }
+      input[type = "text"],.show .text-show{
+        flex: 60%;
+        width: 100%;
+        padding: 10px;
+        margin: 15px;
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+      .button-box,.button-show{
+        flex: 10%;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        background-color: #EC383F;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+      }
+      /* .button-box:{
+        background-color: #cf7174;
+        color: black;
+
+      } */
+
+    </style> 
+  </head>
+  <body>
+
+    <div class="box">
+      <input type="text" class="text">
+      <button class="button-box">Add</button>
+    </div>
+    <div class="show">
+      <!-- <div class="box-show">
+        <div class="text-show">asdasd</div>
+        <button class="button-show">Delete</button>
+      </div>  -->
+    </div>
+    <!-- <form action="">
+      <input type="text">
+      <input type="submit" value="Add Task">
+     </form>
+  <div class="tasks">
+  </div>
+  <button class="remove-all">Remove All</button> -->
+    <script src="main.js"></script>
+  </body>
+</html>

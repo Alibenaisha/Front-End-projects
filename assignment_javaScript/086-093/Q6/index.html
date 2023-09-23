@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href=""> -->
+    <title>Document</title>
+    <style>
+    *{
+        /* width: 100vh; */
+        margin: 0;
+        padding: 0;
+    }
+    
+    form{
+        width: 32%;
+        margin: 0 25%;
+    }
+    input{
+        width: 100%;
+
+    }
+    select{
+        width: 108%;
+    }
+    input, select{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin: 20px 50% ;
+        border: 1px black solid;
+        padding: 10px;
+        text-align: center;
+        
+
+    }
+    input[type="submit"]{
+        color:  white;
+        width: 108%;
+        background-color: #00A574;
+        
+    }
+    .results div,.results section{
+            width: calc(100% / 4);height: calc(100% / 4) ; ; padding: 10px 5px; background-color: yellow; border: 2px solid black; text-align: center;;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="elements" class="input" placeholder="Number Of Elements" />
+        <input type="text" name="texts" class="input" placeholder="Elements Text" />
+        <select name="type" class="input">
+            <option value="Section">Section</option>
+            <option value="Div">Div</option>
+        </select>
+        <input type="submit" name="create" value="Create" />
+        <div class="results"></div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
