@@ -8,6 +8,7 @@ btn.onclick = (e)=>{
     window.sessionStorage.setItem("fname", fname.value);
     window.sessionStorage.setItem("lname", lname.value);
     window.sessionStorage.setItem("email", email.value);
+    // window.sessionStorage.setItem(``,document.querySelector(`option[value = "${sessionStorage.aja}"]`));
 }
 
 fname.setAttribute("value", window.sessionStorage.getItem("fname"))

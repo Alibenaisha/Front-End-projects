@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Tahoma;
+    background-color: #333;
+  }
+  p{
+    color: hsla(0, 0%, 100%, 0.8);
+    margin: 20px auto;
+    width: 159px;
+    /* width: 10px; */
+    overflow: hidden;
+    white-space:nowrap ;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.8);
+    animation: control-width 3s steps(21) 2s both, blink 2s infinite ;
+  }
+  @keyframes control-width{
+    from{
+    width: 0;
+    }
+    to{
+    width: 159px;
+    }
+  }
+  @keyframes blink {
+    from{
+    border-right-color: hsla(0, 0%, 100%, 0.8);
+    }
+    to{
+      border-right-color: transparent;
+    }
+  }
