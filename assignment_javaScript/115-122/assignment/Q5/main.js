@@ -13,7 +13,7 @@ const game = {
   
   // Write Your Destructuring Assignment/s Here
   let {title:t , developer:d,releases:{["Oath In Felghana"]:[u,j],["Ark Of Napishtim"]:{US:u_price,JAP:j_price},Origin:or}  } =game
-  var [o,a]=Object.keys(game.releases)  ;
+  let  [o,a]=Object.keys(game.releases)  ;
 
   
   console.log(`My Favourite Games Style Is ${t} Style`);
