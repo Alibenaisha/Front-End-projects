@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Tahoma;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 5000px;
+
+  }
+  .up{
+    width: 50px;
+    padding: 20px 10px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 69, 235);
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+
+  }
+  .up.show{
+    right: 10px;
+  }
