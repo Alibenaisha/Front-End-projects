@@ -29,5 +29,6 @@
 
   }
   .up.show{
+    transition: 2s;
     right: 10px;
   }
